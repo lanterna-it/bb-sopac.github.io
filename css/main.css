@@ -1,0 +1,169 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;600;800&display=swap");
+
+/*Variables*/
+:root {
+  /* colors */
+  --clr-light: #f5f5f5;
+  --clr-dark: #404040;
+  --clr-stihl: #e3813a;
+  --clr-hover: black;
+
+  /* fonts */
+  --fontf: "Jost", sans-serif;
+  /* font-weight */
+  --fontw-n: 400;
+  --fontw-m: 600;
+  --fontw-b: 800;
+  /* font-size */
+  --fonts-2: 5rem;
+  --fonts-3: 2rem;
+  --fonts-4: 1.2rem;
+  --fonts-p: 1rem;
+
+  /* other */
+  /* borders */
+  --brad: 30px;
+  /* spacing (margins, paddings) */
+  --spacer: 1rem;
+  --spacer-m: calc(var(--spacer) * 2);
+  --spacer-l: calc(var(--spacer) * 3);
+  --spacer-lh: var(--spacer-m);
+}
+
+/* reset */
+* {
+  font-family: var(--fontf);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--clr-light);
+}
+p {
+  font-size: var(--fonts-p);
+  color: var(--clr-dark);
+}
+li {
+  list-style: none;
+}
+h1 {
+  font-size: calc(var(--fonts-3) * 1.2);
+  text-transform: uppercase;
+}
+hr {
+  margin-top: var(--spacer);
+  color: var(--clr-dark);
+  border-radius: var(--brad);
+}
+/* Selectors */
+.btn {
+  background: var(--clr-stihl);
+  display: flex;
+  justify-content: center;
+  margin-block: var(--spacer);
+  padding-block: var(--spacer);
+  border-radius: var(--brad);
+  font-size: var(--fonts-4);
+  font-weight: var(--fontw-b);
+}
+
+/* Header */
+header,
+footer {
+  width: 100%;
+  background: var(--clr-stihl);
+  padding: var(--spacer);
+}
+.mobile-menu {
+  display: flex;
+  justify-content: space-between;
+  /* padding: var(--spacer); */
+}
+.mobile-menu,
+.menu-bars {
+  font-weight: var(--fontw-b);
+  font-size: var(--fonts-3);
+  color: var(--clr-light);
+}
+
+nav {
+  /* padding-inline: var(--spacer); */
+  line-height: var(--spacer-lh);
+  font-size: var(--fonts-4);
+  font-weight: var(--fontw-m);
+  /* display: none; */
+}
+/* Header END */
+
+/* Main */
+main {
+  margin: var(--spacer);
+}
+.main-text p {
+  margin-block: var(--spacer);
+  font-size: calc(var(--fonts-4) * 1.1);
+}
+.main-text span {
+  height: 100vh;
+  font-weight: var(--fontw-b);
+}
+.main-img {
+  padding-block: calc(var(--spacer-l));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Landing */
+.main-landing {
+  height: 90vh;
+}
+.main-landing__cta {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-landing__img img {
+  width: 340px;
+  transform: rotate(10deg);
+}
+/* Landing END */
+/* About */
+.main-about__text p {
+  font-size: var(--fonts-p);
+}
+.main-about {
+  height: 130vh;
+}
+/* About END */
+/* Main END */
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  color: var(--clr-light);
+}
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: var(--fonts-4);
+}
+.footer-main__logo {
+  font-weight: var(--fontw-m);
+}
+.footer-main__contact-icon {
+  margin-left: var(--spacer);
+}
+.footer-secondary {
+  display: flex;
+  justify-content: center;
+  padding-top: var(--spacer);
+  font-size: 85%;
+}
+/* Footer END */
